@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://CSGTorus.cs" type="Script" id=1]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, -5.10043e-05, 3.17737e-05, 3.10037e-05, 0.890861, 0.454276, -5.1476e-05, -0.454276, 0.890861, 0, 2.26743, 5.91719 )
+
+[node name="CSGTorus" type="CSGTorus" parent="."]
+outer_radius = 0.94
+sides = 22
+ring_sides = 12
+script = ExtResource( 1 )
