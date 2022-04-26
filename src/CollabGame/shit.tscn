@@ -1,3 +1,13 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="Spatial" type="Spatial"]
+[ext_resource path="res://shitscript.cs" type="Script" id=1]
+
+[node name="Node" type="Node"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.0840605, 0, 0.996461, 0, 1, 0, -0.996461, 0, 0.0840605, 6.28511, 0, 0 )
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="CSGBox" type="CSGBox" parent="Spatial"]
+script = ExtResource( 1 )
