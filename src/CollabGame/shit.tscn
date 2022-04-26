@@ -1,3 +1,17 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Box.cs" type="Script" id=1]
+
+[sub_resource type="CubeMesh" id=1]
 
 [node name="Spatial" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = null
+script = ExtResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.977633, 0.210318, 0, -0.210318, 0.977633, 0.26641, 4.25818, 18.1691 )
+fov = 40.1594
+far = 8192.0
